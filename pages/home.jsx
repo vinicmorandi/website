@@ -117,39 +117,37 @@ export default function Home() {
 
             <div id='ondinhas'></div>
             <footer>
-                <AnimationOnScroll animateOnce delay={100} animateIn="animate__fadeInUp">
-                    <div>
-                        <SpeedDialAction
-                            key={'Twitter'}
-                            icon={<a href='https://twitter.com/vinicmorandi' target="_blank" style={{ height: '26px', width: '26px' }}><Twitter /></a>}
-                            tooltipPlacement={'top'}
-                            tooltipTitle='@vinicmorandi'
-                            open
-                        />
-                        <SpeedDialAction
-                            key={'GitHub'}
-                            icon={<a href='https://github.com/vinicmorandi' target="_blank" style={{ height: '26px', width: '26px' }}><GitHub /></a>}
-                            tooltipPlacement={'top'}
-                            tooltipTitle='vinicmorandi'
-                            open
-                        />
-                        <SpeedDialAction
-                            key={'LinkedIn'}
-                            icon={<a href='https://www.linkedin.com/in/vin%C3%ADcius-carrer-morandi-b00b5120b/' target="_blank" style={{ height: '26px', width: '26px' }}><LinkedIn /></a>}
-                            tooltipPlacement={'top'}
-                            tooltipTitle='Vinícius Carrer Morandi'
-                            open
-                        />
+                <div>
+                    <SpeedDialAction
+                        key={'Twitter'}
+                        icon={<a href='https://twitter.com/vinicmorandi' target="_blank" style={{ height: '26px', width: '26px' }}><Twitter /></a>}
+                        tooltipPlacement={'top'}
+                        tooltipTitle='@vinicmorandi'
+                        open
+                    />
+                    <SpeedDialAction
+                        key={'GitHub'}
+                        icon={<a href='https://github.com/vinicmorandi' target="_blank" style={{ height: '26px', width: '26px' }}><GitHub /></a>}
+                        tooltipPlacement={'top'}
+                        tooltipTitle='vinicmorandi'
+                        open
+                    />
+                    <SpeedDialAction
+                        key={'LinkedIn'}
+                        icon={<a href='https://www.linkedin.com/in/vin%C3%ADcius-carrer-morandi-b00b5120b/' target="_blank" style={{ height: '26px', width: '26px' }}><LinkedIn /></a>}
+                        tooltipPlacement={'top'}
+                        tooltipTitle='Vinícius Carrer Morandi'
+                        open
+                    />
 
-                        <SpeedDialAction
-                            key={'Email'}
-                            icon={<a href='mailto:viniciuscmorandi@gmail.com' style={{ height: '26px', width: '26px', color: 'var(--roxo1)' }}><Email /></a>}
-                            tooltipPlacement={'top'}
-                            tooltipTitle='viniciuscmorandi@gmail.com'
-                            open
-                        />
-                    </div>
-                </AnimationOnScroll>
+                    <SpeedDialAction
+                        key={'Email'}
+                        icon={<a href='mailto:viniciuscmorandi@gmail.com' style={{ height: '26px', width: '26px', color: 'var(--roxo1)' }}><Email /></a>}
+                        tooltipPlacement={'top'}
+                        tooltipTitle='viniciuscmorandi@gmail.com'
+                        open
+                    />
+                </div>
                 <p>
                     <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" target="_blank" rel="noopener noreferrer">
                         Powered by{' '}
@@ -261,7 +259,7 @@ export default function Home() {
                     width: 350px;
                     height: 250px;
                     box-shadow: var(--shadow2);
-                    background: var(--branco);
+                    background: #fff;
                     padding: 30px;
                     display: flex;
                     flex-direction: column;
