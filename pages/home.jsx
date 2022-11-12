@@ -49,9 +49,12 @@ export default function Home() {
                 </div>
                 <div class='center'>
                     <AnimationOnScroll animateOnce delay={2000} animateIn="animate__fadeInUp">
-                        <span className='small'>(this picture isn't actually me lol)</span>
+                        <span className='small'>(this is the only pic I had, sry)</span>
                     </AnimationOnScroll>
-                    <img id="foto" src="/foto.jpg" />
+                    <AnimationOnScroll animateOnce delay={200} animateIn="animate__fadeInUp">
+                        <img id="foto" src="/foto.jpg" />                    
+                    </AnimationOnScroll>
+                    
                 </div>
             </section>
 
