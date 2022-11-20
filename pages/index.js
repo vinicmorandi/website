@@ -12,8 +12,10 @@ const theme = createTheme({
     },
 });
 
+console.log("you're not supposed to be here! >:(")
+
 export default function Index() {
-    const [width, setWidth] = useState(901)
+    const [width, setWidth] = useState(typeof window !== 'undefined' && window.innerWidth)
 
     useEffect(() => {
         window.addEventListener('resize', setDimension);
@@ -22,13 +24,26 @@ export default function Index() {
             setWidth(window.innerWidth)
         }
     })
-    
+
     return (
         <ThemeProvider theme={theme}>
             {
-                width >= 1920
+                width >= 1900
                     ? <Home />
-                    : <center>too lazy to do proper responsivity lol</center>
+                    : <>
+                        <span>too lazy to do proper responsivity sry</span>
+                        <style jsx>
+                            {`
+                            span {
+                                display: flex;
+                                flex-direction:column;
+                                text-align: center;
+                                justify-content: center;
+                                height: 93vh;
+                            }
+                            `}
+                        </style>
+                    </>
             }
         </ThemeProvider>
     )
