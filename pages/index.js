@@ -12,15 +12,17 @@ const theme = createTheme({
     },
 });
 
-
-
 export default function Index() {
     const [width, setWidth] = useState(901)
 
     useEffect(() => {
-        window.addEventListener('resize', setWidth(window.innerWidth));
-    }, [width])
+        window.addEventListener('resize', setDimension);
 
+        function setDimension() {
+            setWidth(window.innerWidth)
+        }
+    })
+    
     return (
         <ThemeProvider theme={theme}>
             {
