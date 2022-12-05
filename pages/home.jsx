@@ -121,13 +121,6 @@ export default function Home() {
             <footer>
                 <div>
                     <SpeedDialAction
-                        key={'Twitter'}
-                        icon={<a href='https://twitter.com/vinicmorandi' target="_blank" style={{ height: '26px', width: '26px' }}><Twitter /></a>}
-                        tooltipPlacement={'top'}
-                        tooltipTitle='@vinicmorandi'
-                        open
-                    />
-                    <SpeedDialAction
                         key={'GitHub'}
                         icon={<a href='https://github.com/vinicmorandi' target="_blank" style={{ height: '26px', width: '26px' }}><GitHub /></a>}
                         tooltipPlacement={'top'}
